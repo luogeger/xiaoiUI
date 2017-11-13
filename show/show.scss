@@ -1,0 +1,29 @@
+.main{
+  .intro{
+    padding: 30px 40px 0 40px;
+    background-color: #EAEAEA;
+    .title{
+      font-size: 30px;
+    }
+    .explain{
+      padding: 20px 0;
+      width: 660px;
+      line-height: 1.8;
+    }
+  }
+
+  .info{
+    text-align: center;
+    padding: 50px 0;
+    img{
+      width: 1250px;
+    }
+  }
+
+  .footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    border-top: 1px solid #CCCCCC;
+  }
+}

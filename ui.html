@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="asset/iconfont/iconfont.css">
+    <title>UI</title>
+    <style>
+        .content-item>div{
+            margin: 10px;
+            margin-left: 0;
+        }
+
+        #nav-head .logo{
+            width: 180px;
+            height: 100%;
+            background-color: #FF8A41;
+            text-align: center;
+        }
+
+        #popup{
+            border-radius: 6px;
+            box-shadow: 1px 1px 10px 1px #000;
+            position: absolute;
+            top: -5000px;
+            left: 0;
+            right: 0;
+            margin: 5% 20%;
+            background-color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        #sidle{
+            width: 360px;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ff0000;
+            display: none;
+        }
+
+        .i-gallery-img img,
+        .i-gallery-all img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="nav-head">
+            <div class="logo pull-left">
+                <img src="asset/images/i_logo.png" alt="logo" title="logo" style="margin-top: 12px;">
+            </div>
+            <div class="nav-head-info-tip pull-left">
+            <span class="info-tip-drop">
+                <span>任务</span>
+                <i class="icon-arrow-down"></i>
+                <ul class="info-tip-menu">
+                    <li>一</li>
+                    <li>二二</li>
+                    <li>三三三</li>
+                    <li>四四四四</li>
+                    <li>五五五五五</li>
+                    <li>六六六六六六123213211321</li>
+                </ul>
+            </span>
+            </div>
+            <div class="nav-head-info-tip pull-right">
+            <span class="info-tip-drop">
+                <span>消息</span>
+                <i class="icon-arrow-down"></i>
+                <ul class="info-tip-menu">
+                    <li>一</li>
+                    <li>二二</li>
+                    <li>三三三</li>
+                    <li>四四四四</li>
+                    <li>五五五五五</li>
+                    <li>六六六六六六123213211321</li>
+                </ul>
+            </span>
+            </div>
+            <div class="nav-head-info-tip pull-right">
+            <span class="info-tip-drop">
+                <span>公告</span>
+                <i class="icon-arrow-down"></i>
+                <ul class="info-tip-menu">
+                    <li>一</li>
+                    <li>二二</li>
+                    <li>三三三</li>
+                    <li>四四四四</li>
+                    <li>五五五五五</li>
+                    <li>六六六六六六123213211321</li>
+                </ul>
+            </span>
+            </div>
+        </div><!-- /#nav-head -->
+    
+        <div id="nav-sidle">
+            <div id="accordion-nav">
+                <div class="panel">
+                    <a href="javascript:;" class="">
+                        <i class="icon-home-line"></i>
+                        <span>首页</span>
+                    </a>
+                </div>
+                
+                <div class="panel">
+                    <a href="javascript:;">
+                        <i class="icon-customer"></i>
+                        <span>人工客服</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="active">
+                                <span>上单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>打野</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>中单</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="panel">
+                    <a href="javascript:;">
+                        <i class="icon-book"></i>
+                        <span>学习管理</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>上单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>打野</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>中单</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="panel">
+                    <a href="javascript:;">
+                        <i class="icon-people"></i>
+                        <span>用户管理</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>上单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>打野</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>中单</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="panel">
+                    <a href="javascript:;">
+                        <i class="icon-setting"></i>
+                        <span>系统管理</span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <span>上单</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>打野</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>中单</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /#nav-sidle -->
+        
+        <div id="nav-content">
+            <div class="content-item" style="padding: 10px;">
+                <div>
+                    <div class="btn btn-xs btn-border">按钮</div>
+                    <div class="btn btn-sm btn-border">按钮</div>
+                    <div class="btn btn-md btn-border">按钮</div>
+                    <div class="btn btn-lg btn-border">按钮</div>
+                </div>
+                <!-- btn -->
+                <div class="clearfix">
+                    <button class="btn btn-xs" id="dom">dom</button>
+                    <button class="btn btn-xs btn-text" id="arr"><i class="icon-edit"></i>Array</button>
+                    <button class="btn btn-xs btn-border" id="sidleBtn"><i class="icon-edit"></i>sidle</button>
+                    <button class="btn btn-xs btn-theme" ><i class="icon-edit"></i>编辑</button>
+                </div>
+    
+                <div class="clearfix">
+                    <button class="btn btn-sm">编辑</button>
+                    <button class="btn btn-sm btn-text"><i class="icon-edit"></i>编辑</button>
+                    <button class="btn btn-sm btn-border"><i class="icon-edit"></i>编辑</button>
+                    <button class="btn btn-sm btn-theme"><i class="icon-edit"></i>编辑</button>
+                </div>
+    
+                <div class="clearfix">
+                    <button class="btn btn-md">编辑</button>
+                    <button class="btn btn-md btn-text"><i class="icon-edit"></i>编辑</button>
+                    <button class="btn btn-md btn-border"><i class="icon-edit"></i>编辑</button>
+                    <button class="btn btn-md btn-theme"><i class="icon-edit"></i>编辑</button>
+                </div>
+    
+                <div class="clearfix">
+                    <!--<button class="btn btn-lg">编辑</button>-->
+                    <!--<button class="btn btn-lg btn-text"><i class="icon-edit"></i>编辑</button>-->
+                    <!--<button class="btn btn-lg btn-border"><i class="icon-edit"></i>编辑</button>-->
+                    <!--<button class="btn btn-lg btn-theme"><i class="icon-edit"></i>编辑</button>-->
+                </div>
+    
+                <div>
+                    <!-- input -->
+                    <!--<div class="clearfix">-->
+                    <!--<div class="input-group-xs">-->
+                    <!--<label for="">项目编号</label>-->
+                    <!--<input type="text" class="">-->
+                    <!--</div>-->
+                    <!---->
+                    <!--</div>-->
+                    <!---->
+                    <!--<div class="clearfix">-->
+                    <!--<div class="input-group-sm">-->
+                    <!--<label>项目编号</label>-->
+                    <!--<input type="text">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!---->
+                    <!--<div class="clearfix">-->
+                    <!--<div class="input-group">-->
+                    <!--<label for="">项目编号</label>-->
+                    <!--<input type="text" class="">-->
+                    <!--</div>-->
+                    <!--</div>-->
+        
+                    <!--  dropDown -->
+                    <!--<div class="clearfix">-->
+                    <!--<div id="asd" class="dropdown">-->
+                    <!--<a href="javascript:;">&#45;&#45; 请选择 &#45;&#45;</a>-->
+                    <!--<ul>-->
+                    <!--<li>窗前明月光</li>-->
+                    <!--<li>疑是地上霜</li>-->
+                    <!--<li>举头望明月</li>-->
+                    <!--<li>低头思故乡</li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!---->
+                    <!--<div class="clearfix">-->
+                    <!--<div class="dropdown drop-sm">-->
+                    <!--<a href="javascript:;">&#45;&#45; 请选择 &#45;&#45;</a>-->
+                    <!--<ul>-->
+                    <!--<li>春眠不觉晓</li>-->
+                    <!--<li>处处闻啼鸟</li>-->
+                    <!--<li>夜来风雨声</li>-->
+                    <!--<li>花落知多少</li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!---->
+                    <!--<div class="clearfix">-->
+                    <!--<div class="dropdown drop-xs">-->
+                    <!--<a href="javascript:;">&#45;&#45; 请选择 &#45;&#45;</a>-->
+                    <!--<ul>-->
+                    <!--<li>春眠不觉晓</li>-->
+                    <!--<li>处处闻啼鸟</li>-->
+                    <!--<li>夜来风雨声</li>-->
+                    <!--<li>花落知多少</li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+    
+                <!-- btn + input + dropDown -->
+                <div class="clearfix">
+                    <div class="input-group-xs">
+                        <label for="">项目编号</label>
+                        <input type="text" class="">
+                    </div>
+        
+                    <div class="dropdown drop-xs">
+                        <a href="javascript:;">-- 请选择 --</a>
+                        <ul>
+                            <li>春眠不觉晓11111</li>
+                            <li>处处闻啼鸟</li>
+                            <li>夜来风雨声</li>
+                            <li>花落知多少</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-theme btn-xs"><i class="icon-edit"></i>编辑</button>
+                </div>
+    
+                <div class="clearfix">
+                    <div class="input-group-sm">
+                        <label for="">项目编号</label>
+                        <input type="text" class="">
+                    </div>
+        
+                    <div class="dropdown drop-sm" style="min-width: 110px;">
+                        <a href="javascript:;">-- 请选择 --</a>
+                        <ul>
+                            <li>春眠不觉晓</li>
+                            <li>处处闻啼鸟</li>
+                            <li>夜来风雨声</li>
+                            <li>花落知多少</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-theme btn-sm"><i class="icon-edit"></i>编辑</button>
+                </div>
+    
+                <div class="clearfix">
+        
+                    <div class="input-group-md">
+                        <label for="">项目编号</label>
+                        <input type="text" class="">
+                    </div>
+        
+                    <div class="dropdown drop-md" style="width: 300px">
+                        <a href="javascript:;">-- 请选择 --</a>
+                        <ul>
+                            <li>春眠不觉晓</li>
+                            <li>处处闻啼鸟</li>
+                            <li>夜来风雨声</li>
+                            <li>花落知多少</li>
+                        </ul>
+                    </div>
+        
+                    <button class="btn btn-md btn-theme" id="btn2"><i class="icon-edit"></i>编辑</button>
+                </div>
+    
+                <!-- progress-bar -->
+                <div class="clearfix" style="margin-top: 50px;">
+                    <div class="progress-bar">
+                        <div class="bar">
+                            <span class="percent"> 50% </span>
+                        </div>
+                    </div>
+                    <div style="height: 50px;"></div>
+        
+                    <div class="progress-upload">
+                        <div class="bar">
+                            <span class="percent"> 37% </span>
+                        </div>
+                    </div>
+                    <div style="height: 50px;"></div>
+        
+                    <div class="progress-step">
+                        <div class="step-group bgc-theme">
+                            <div class="step">1</div>
+                        </div>
+            
+                        <div class="step-group bgc-theme ">
+                            <div class="interval"></div>
+                            <div class="step">2</div>
+                        </div>
+            
+                        <div class="step-group ">
+                            <div class="interval"></div>
+                            <div class="step">3</div>
+                        </div>
+            
+                        <div class="step-group">
+                            <div class="interval"></div>
+                            <div class="step">4</div>
+                        </div>
+            
+                        <div class="step-group">
+                            <div class="interval"></div>
+                            <div class="step">5</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- check-box -->
+                <div class="clearfix">
+                    <br>
+                    <div class="check-box-group">
+                        <input type="checkbox" value="0"><span>篮球</span>
+                        <input type="checkbox" value="1" checked="checked"><span>足球</span>
+                        <input type="checkbox" value="2" checked="checked"><span>羽毛球</span>
+                    </div>
+                    <br>
+                    <div class="radio-group">
+                        <input type="radio" name="asd" checked="checked"><span>三个月</span>
+                        <input type="radio" name="asd" checked="checked"><span>半年</span>
+                        <input type="radio" name="asd"><span>一年</span>
+                        <input type="radio" name="asd" checked="checked"><span>一年</span>
+                        <input type="radio" name="asd"><span>一年</span>
+                    </div>
+                </div>
+    
+                <!-- tab -->
+                <div class="clearfix">
+                    <!-- underline button border btn-border crumb-->
+                        <br>
+                    <div class="tab-crumb">
+                        <div class="tab-item contra-crumb"><i class="icon-edit"></i>首页</div>
+                        <div class="tab-item contra-crumb">通讯录</div>
+                        <div class="tab-item">各种报表</div>
+                        <div class="tab-item">好多好多报表</div>
+                    </div>
+                        <br>
+                    <div class="tab-underline">
+                        <div class="tab-item contra-underline">首页</div>
+                        <div class="tab-item">通讯录</div>
+                        <div class="tab-item">各种报表</div>
+                        <div class="tab-item">好多好多报表</div>
+                    </div>
+                        <br>
+                    <div class="tab-button">
+                        <div class="tab-item contra-button">
+                            <i class="icon-edit"></i>
+                            首页
+                        </div>
+                        <div class="tab-item">
+                            文字超过一定宽度就是用....代替
+                        </div>
+                        <div class="tab-item">
+                            各种报表
+                        </div>
+                        <div class="tab-item">
+                            好多好多报表
+                        </div>
+                    </div>
+                        <br>
+                    <div class="tab-border">
+                        <div class="tab-item ">首页</div>
+                        <div class="tab-item contra-border"><i class="icon-edit"></i>通讯录</div>
+                        <div class="tab-item"><i class="icon-edit"></i>各种报表</div>
+                        <div class="tab-item">好多好多报表</div>
+                    </div>
+                        <br><br>
+                    <div class="tab-btn-border">
+                        <div class="tab-item ">首页</div>
+                        <div class="tab-item contra-btn-border">
+                            通讯录
+                            <i class="icon-edit"></i>
+                        </div>
+                        <div class="tab-item">
+                            各种报表
+                            <i class="icon-edit"></i>
+                            <i class="icon-edit"></i>
+                        </div>
+                        <div class="tab-item">好多好多报表</div>
+                    </div>
+                </div>
+                
+                <div class="clearfix">
+                    <span>
+                        <div class="i-label-info">1</div>
+                        <div class="i-label-success">1</div>
+                        <div class="i-label-warn">1</div>
+                        <div class="i-label-error">1</div>
+                        <div class="i-label-default">1</div>
+                    </span>
+                    <span>
+                        <div class="i-badge-info">3</div>
+                        <div class="i-badge-success">3</div>
+                        <div class="i-badge-warn">3</div>
+                        <div class="i-badge-error">3</div>
+                        <div class="i-badge-default">3</div>
+                    </span>
+                </div>
+                <!-- info success error warn-->
+                <div class="clearfix">
+                    <div class="alert-success">
+                        <span>Well done! You successfully read this important alert message</span>
+                    </div>
+                    <br>
+                    <div class="alert-error">
+                        <span>Oh snap! Change a few things up and try submitting again.</span>
+                    </div>
+                    <br>
+                    <div class="alert-warn">
+                        <span>Warning! Better check yourself, you're not looking too good</span>
+                    </div>
+                    <br>
+                    <div class="alert-info">
+                        <span>Heads up! This alert needs your attention, but it's not super important</span>
+                    </div>
+                </div>
+    
+                <!-- pages --> <br>
+                <div class="clearfix">
+                    <div class="pages-line">
+                        <!--<div class="first"> 首页 </div>-->
+                        <div class="line-previous page-disabled"> 上一页 </div>
+                        <ul>
+                            <li class="">1</li>
+                            <!--<li>...</li>-->
+                            <li class="line-contra">2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li class="line-point">···</li>
+                            <li>39</li>
+                        </ul>
+                        <div class="line-next"> 下一页 </div>
+                        <div class="line-import"> <input type="text"><label class="line-border"></label></div>
+                        <div class="line-go">Go</div>
+                    </div>
+                    <br><br>
+                    <div class="pages-filled">
+                        <div class="previous page-disabled"> <span class="icon-arrow-left"></span> </div>
+                        <ul>
+                            <li class="page-disabled">1</li>
+                            <!--<li>...</li>-->
+                            <li>2</li>
+                            <li class="filled-contra">3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li class="point">···</li>
+                            <li>28</li>
+                        </ul>
+                        <div class="next"> <span class="icon-arrow-right"></span> </div>
+                    </div>
+                </div>
+    
+                <!-- tree -->
+                <div class="tree-view">
+                    <ul class="first">
+                        <li>
+                            <span>艾欧尼亚123123123</span>
+                            <ul class="second">
+                                <li>
+                                    <span>上单</span>
+                                </li>
+                                <li>
+                                    <span>打野</span>
+                                    <ul class="third">
+                                        <li>
+                                            <span>德邦总管</span>
+                                        </li>
+                                        <li>
+                                            <span>狂战士</span>
+                                        </li>
+                                        <li>
+                                            <span>泰达米尔</span>
+                                            <ul class="fourth">
+                                                <li>
+                                                    <span>fourth</span>
+                                                </li>
+                                                <li>
+                                                    <span>fourth</span>
+                                                </li>
+                                                <li>
+                                                    <span>fourth</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>辅助</span>
+                                    <ul class="third">
+                                        <li>
+                                            <span>风暴之怒</span>
+                                        </li>
+                                        <li>
+                                            <span>魂锁典狱长</span>
+                                        </li>
+                                        <li>
+                                            <span>众星之子</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>卡拉曼达</span>
+                        </li>
+                        <li>
+                            <span>征服之海</span>
+                            <ul class="second">
+                                <li>
+                                    <span>上单</span>
+                                </li>
+                                <li>
+                                    <span>打野</span>
+                                </li>
+                                <li>
+                                    <span>辅助</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>皮城警备</span>
+                        </li>
+                        <li>
+                            <span>裁决之地</span>
+                        </li>
+                        <li>
+                            <span>雷瑟守备</span>
+                            <ul class="second">
+                                <li>
+                                    <span>上单</span>
+                                    <ul class="third">
+                                        <li>
+                                            <span>德玛西亚皇子</span>
+                                        </li>
+                                        <li>
+                                            <span>齐天大圣</span>
+                                        </li>
+                                        <li>
+                                            <span>迅捷斥候</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>打野</span>
+                                </li>
+                                <li>
+                                    <span>辅助</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>诺克萨斯</span>
+                        </li>
+        
+                    </ul>
+                </div>
+    
+                <div class="tree-view-slim">
+                    <ul class="first">
+                        <li>
+                            <a href="javascript:;">
+                                <span>艾欧尼亚</span>
+                            </a>
+                            <ul class="second">
+                                <li>
+                                    <a href="javascript:;">
+                                        <!--<i class="icon-arrow-right"></i>-->
+                                        <span>中单</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <!--<i class="icon-arrow-right"></i>-->
+                                        <span>打野</span>
+                                    </a>
+                                    <ul class="third">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <!--<i class="icon-circle"></i>-->
+                                                <span>德邦总管</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <!--<i class="icon-circle"></i>-->
+                                                <span>狂战士</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <!--<i class="icon-circle"></i>-->
+                                                <span>无极剑圣</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <!--<i class="icon-circle"></i>-->
+                                                <span>雷霆咆哮</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <!--<i class="icon-arrow-right"></i>-->
+                                        <span>辅助</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>卡拉曼达</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>征服之海</span>
+                            </a>
+                            <ul class="second">
+                                <li>
+                                    <a href="javascript:;">
+                                        <span>中单</span>
+                                    </a>
+                                    <ul class="third">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>潮汐海灵</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>光辉女郎</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span>打野</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span>辅助</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span>ADC</span>
+                                    </a>
+                                    <ul class="third">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>寒冰射手</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span>暗夜猎手</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>皮城警备</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <span>诺克萨斯</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- datePicker -->
+                <div class="datePicker----" style="display: none;">
+                    <div class="container">
+                        <div class="inputBox">
+                            <input type="text" class="" placeholder="请选择日期">
+                            <i class="icon-cale-a"></i>
+                        </div>
+                        
+                        <div class="dateBox">
+                            <!-- 初始化 -->
+                            <div class="init-box">
+                                <div class="date-head">
+                                    <i class="icon-arrow-dbLeft prev-year"></i>
+                                    <i class="icon-arrow-left prev-month"></i>
+                                    <span class="select-time">
+                                        <span class="select-year" id="datePickerYear">2017年</span>
+                                        <span class="select-month" id="datePickerMonth">9月</span>
+                                    </span>
+                                    <i class="icon-arrow-right next-month"></i>
+                                    <i class="icon-arrow-dbRight next-year"></i>
+                                </div>
+    
+                                <div class="date-body">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th>一</th>
+                                            <th>二</th>
+                                            <th>三</th>
+                                            <th>四</th>
+                                            <th>五</th>
+                                            <th>六</th>
+                                            <th>日</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="inactive">28</td>
+                                            <td class="inactive">29</td>
+                                            <td class="inactive">30</td>
+                                            <td class="inactive">31</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="active today">11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td class="inactive">1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="inactive">2</td>
+                                            <td class="inactive">3</td>
+                                            <td class="inactive">4</td>
+                                            <td class="inactive">5</td>
+                                            <td class="inactive">6</td>
+                                            <td class="inactive">7</td>
+                                            <td class="inactive">8</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+    
+                                <div class="date-foot">
+                                    <span class="foot-time">
+                                        <input type="text" id="datePickerHour">:
+                                        <input type="text" id="datePickerMinute">:
+                                        <input type="text" id="datePickerSecond">
+                                    </span>
+                                    <span class="foot-btn">
+                                        <span class="btn-today" id="datePickerNow">此刻</span>
+                                        <span class="btn-empty" id="datePickerEmpty">清空</span>
+                                        <span class="btn-ok" id="datePickerConfirm">确认</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- 年份 -->
+                            <div class="year-box">
+                                <div class="date-head">
+                                    <i class="icon-arrow-dbLeft prev-year"></i>
+                                    <span class="select-year">2010 - 2019</span>
+                                    <i class="icon-arrow-dbRight next-year"></i>
+                                </div>
+                                
+                                <div class="date-body">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><span><i class="icon-arrow-dbLeft"></i></span></td>
+                                                <td><span>2010</span></td>
+                                                <td><span>2011</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span>2012</span></td>
+                                                <td class="active"><span>2013</span></td>
+                                                <td><span>2014</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span>2015</span></td>
+                                                <td><span>2016</span></td>
+                                                <td><span>2017</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span>2018</span></td>
+                                                <td><span>2019</span></td>
+                                                <td><span><i class="icon-arrow-dbRight"></i></span></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 月份 -->
+                            <div class="month-box">
+                                <div class="date-head">
+                                    <i class="icon-arrow-dbLeft prev-year"></i>
+                                    <span class="select-month">2017</span>
+                                    <i class="icon-arrow-dbRight next-year"></i>
+                                </div>
+    
+                                <div class="date-body">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td><span>一月</span></td>
+                                            <td><span>二月</span></td>
+                                            <td><span>三月</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>四月</span></td>
+                                            <td><span>五月</span></td>
+                                            <td><span>六月</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="active"><span>七月</span></td>
+                                            <td><span>八月</span></td>
+                                            <td class="active"><span>九月</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>十月</span></td>
+                                            <td><span>十一月</span></td>
+                                            <td><span>十二月</span></td>
+                                        </tr>
+            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 小时 -->
+                            <div class="hour-box">
+                                <div class="date-head">
+                                    <span>选择小时</span>
+                                </div>
+                                <div class="date-body">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td class="active">7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>9</td>
+                                                <td>10</td>
+                                                <td>11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>13</td>
+                                                <td>14</td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                                <td>19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20</td>
+                                                <td>21</td>
+                                                <td>22</td>
+                                                <td>23</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 分钟 -->
+                            <div class="minute-box">
+                                <div class="date-head">
+                                    <span>选择小时</span>
+                                </div>
+                                <div class="date-body">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                                <td>8</td>
+                                                <td>9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>11</td>
+                                                <td class="active">12</td>
+                                                <td>13</td>
+                                                <td>14</td>
+                                                <td>15</td>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                                <td>19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20</td>
+                                                <td>21</td>
+                                                <td>22</td>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                                <td>26</td>
+                                                <td>27</td>
+                                                <td>28</td>
+                                                <td>29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>30</td>
+                                                <td>31</td>
+                                                <td>32</td>
+                                                <td>33</td>
+                                                <td>34</td>
+                                                <td>35</td>
+                                                <td>36</td>
+                                                <td>37</td>
+                                                <td>38</td>
+                                                <td>39</td>
+                                            </tr>
+                                            <tr>
+                                                <td>40</td>
+                                                <td>41</td>
+                                                <td>42</td>
+                                                <td>43</td>
+                                                <td>44</td>
+                                                <td>45</td>
+                                                <td>46</td>
+                                                <td>47</td>
+                                                <td>48</td>
+                                                <td>49</td>
+                                            </tr>
+                                            <tr>
+                                                <td>50</td>
+                                                <td>51</td>
+                                                <td>52</td>
+                                                <td>53</td>
+                                                <td>54</td>
+                                                <td>55</td>
+                                                <td>56</td>
+                                                <td>57</td>
+                                                <td>58</td>
+                                                <td>59</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 秒数 -->
+                            <div class="second-box">
+                                <div class="date-head">
+                                    <span>选择秒</span>
+                                </div>
+                                <div class="date-body">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td class="active">13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td>32</td>
+                                            <td>33</td>
+                                            <td>34</td>
+                                            <td>35</td>
+                                            <td>36</td>
+                                            <td>37</td>
+                                            <td>38</td>
+                                            <td>39</td>
+                                        </tr>
+                                        <tr>
+                                            <td>40</td>
+                                            <td>41</td>
+                                            <td>42</td>
+                                            <td>43</td>
+                                            <td>44</td>
+                                            <td>45</td>
+                                            <td>46</td>
+                                            <td>47</td>
+                                            <td>48</td>
+                                            <td>49</td>
+                                        </tr>
+                                        <tr>
+                                            <td>50</td>
+                                            <td>51</td>
+                                            <td>52</td>
+                                            <td>53</td>
+                                            <td>54</td>
+                                            <td>55</td>
+                                            <td>56</td>
+                                            <td>57</td>
+                                            <td>58</td>
+                                            <td>59</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="datePicker">
+                    <input type="text" placeholder="选择时间">
+                </div>
+    
+                <div class="datePicker">
+                    <input type="text" placeholder="输入时间">
+                </div>
+    
+                <div class="datePicker">
+                    <input type="text" placeholder="选择输入时间">
+                </div>
+                <!-- table -->
+                <div style="margin: 50px 0;">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>姓名</th>
+                                <th>性别</th>
+                                <th>年龄</th>
+                                <th>电话</th>
+                                <th>地址</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>德玛西亚</td>
+                            <td>男</td>
+                            <td>19</td>
+                            <td>13579246810</td>
+                            <td>电信一区召唤师峡谷瓦洛兰大陆</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>德玛西亚</td>
+                            <td>男</td>
+                            <td>19</td>
+                            <td>13579246810</td>
+                            <td>电信一区召唤师峡谷瓦洛兰大陆</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>德玛西亚</td>
+                            <td>男</td>
+                            <td>19</td>
+                            <td>13579246810</td>
+                            <td>电信一区召唤师峡谷瓦洛兰大陆</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>德玛西亚</td>
+                            <td>男</td>
+                            <td>19</td>
+                            <td>13579246810</td>
+                            <td>电信一区召唤师峡谷瓦洛兰大陆</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>德玛西亚</td>
+                            <td>男</td>
+                            <td>19</td>
+                            <td>13579246810</td>
+                            <td>电信一区召唤师峡谷瓦洛兰大陆</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>德玛西亚</td>
+                            <td>男</td>
+                            <td>19</td>
+                            <td>13579246810</td>
+                            <td>电信一区召唤师峡谷瓦洛兰大陆</td>
+                        </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+    
+                <!-- model -->
+                <div id="popup">
+                    <p>大江东去浪淘尽</p>
+                    <p>浪花淘尽英雄</p>
+                    <p>是非成败转头空</p>
+                    <p>青山依旧在</p>
+                    <p>几度夕阳红</p>
+                    <p>白发渔樵江渚上</p>
+                    <p>惯看秋月春风</p>
+                    <p>一壶浊酒喜相逢</p>
+                    <p>古今多少事</p>
+                    <p>都付笑谈中</p>
+                    <br>
+                </div>
+    
+                <!-- sidle -->
+                <div id="sidle">
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                    <p>ui.sidle</p>
+                </div>
+    
+                <!-- slider -->
+                <span class="boxFocus" style="display: inline-block; margin: 0 0 50px 0; width: 511px;">
+                    <div id="focus"></div>
+                </span>
+            
+                <!-- img -->
+                <div class="img-square" style="margin: 0 0 0 10px;">
+                    <img style="width: 140px; height: 140px;" src="asset/images/motp.jpg" title="img-square" alt="这是图片">
+                </div>
+                
+                <div class="img-round" style="margin: 0 0 0 10px;">
+                    <img style="width: 140px; height: 140px;" src="asset/images/motp.jpg" alt="这是图片">
+                </div>
+                
+                <!-- gallery -->
+                <div>
+                    <div class="i-gallery-img">
+                        <div class="img-square">
+                            <img src="asset/images/motp.jpg" title="img-square" alt="这是图片">
+                        </div>
+                        <div class="text">
+                            <p class="title">图片边框</p>
+                            <p class="explain">小i工程中心内部使用规范</p>
+                            <p class="time">2017-10-24</p>
+                        </div>
+                    </div>
+    
+                    <div class="i-gallery-all">
+                        <div class="img-square">
+                            <img src="asset/images/motp.jpg" title="img-square" alt="这是图片">
+                            <div class="text">
+                                <p class="title">容器边框</p>
+                                <p class="explain">小i工程中心内部使用规范</p>
+                                <p class="time">2017-10-24</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="i-gallery-all">
+                        <div class="img-square">
+                            <img src="asset/images/motp.jpg" title="img-square" alt="这是图片">
+                            <div class="text">
+                                <p class="title">容器边框</p>
+                                <p class="explain">小i工程中心内部使用规范</p>
+                                <p class="time">2017-10-24</p>
+                                <div class="btn btn-md btn-theme">按钮</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- -->
+            </div><!-- /#content-item -->
+        </div><!-- /#nav-content -->
+    </div><!-- /.wrapper -->
+    <div style="height: 350px;"></div>
+
+<script src="asset/js/jquery-1.12.4.min.js"></script>
+<script src="ui.js"></script>
+<script>
+    $.fn.extend({
+        sScroll: function (options){
+            var defaults = {
+                width: 'auto', //可滚动区域宽度
+                height: '100%', //可滚动区域高度
+                size: '5px',
+
+                wrapClass: 'scrollWrap',
+                railClass: 'scrollRail',
+                barClass: 'scrollBar',
+            };
+
+            var obj = $.extend(defaults, options);
+            
+            this.each(function (){
+                var _this = $(this);
+                var thisHeight = _this.css('height');
+                var thisWidth = _this.css('width');
+                var wrapDiv = $('<div></div>').addClass(obj.wrapClass).css({
+                    width: obj.width,
+                    height: obj.height,
+                    border: '2px solid red',
+                    overflow: 'hidden',
+                    position: 'relative',
+                });
+                
+                _this.wrap(wrapDiv);
+
+                
+                
+                if(thisHeight > obj.height){
+                }
+                
+                if(thisWidth > obj.width){
+                    console.log(obj.width);
+                    var railDiv = $('<div></div>').addClass(obj.railClass).css({
+                        position: 'absolute',
+                        bottom: '0px',
+                        height: obj.size,
+                        width: obj.width,
+                        color: '#000',
+                    });
+                    $(this).after(railDiv);
+                }
+                
+            })// each -- end
+        }// slimScroll -- end
+    });// extend -- end
+    
+    // -- model dom
+    $('#dom').click(function (){
+        ui.modal('#popup');
+    });
+
+    // -- model 字符串、函数
+    $('#arr').click(function (){
+        var html =
+            '<p>青山依旧在</p>'+
+            '<p>几度夕阳红</p>'+
+            '<p>白发渔樵江渚上</p>'+
+            '<p>惯看秋月春风</p>'+
+            '<p>一壶浊酒喜相逢</p>'+
+            '<p>古今多少事</p>'+
+            '<p>Array</p>'+
+            '<p>大江东去浪淘尽</p>'+
+            '<p>浪花淘尽英雄</p>'+
+            '<p>是非成败转头空</p>'+
+            '<p>青山依旧在</p>'+
+            '<p>几度夕阳红</p>'+
+            '<p>白发渔樵江渚上</p>'+
+            '<p>惯看秋月春风</p>'+
+            '<p>一壶浊酒喜相逢</p>'+
+            '<p>古今多少事</p>'+
+            '<p>都付笑谈中</p>';
+            
+        function arrFun (){
+            console.log('点击确认，执行的函数');
+        };
+        
+        
+        ui.modal([html, arrFun]);
+    });
+
+    // -- sidle dom
+    $('#sidleBtn').click(function (){
+        ui.sidle('#sidle');
+    });
+
+    // -- 滚动条
+//    $("#accordion-nav").slimScroll({
+//        height: "100%",
+//        width: "180px",
+//    });
+    
+
+    // -- 轮播图
+    var data = [
+        {title: "国庆123", src: "asset/images/b5.jpg", href: "国庆"},
+        {title: "Galaxy On7", src: "asset/images/b1.jpg", href: "Galaxy On7"},
+        {title: "Air Touch-X2", src: "asset/images/b2.jpg", href: "Air Touch-X2"},
+        {title: "满199减100", src: "asset/images/b3.jpg", href: "满199减100"},
+        {title: "奇趣", src: "asset/images/b4.jpg", href: "奇趣"},
+        {title: "360奇酷", src: "asset/images/b6.jpg", href: "360奇酷"}
+    ];
+    
+    var obj = {
+        data: data,
+    };
+    
+    ui.slider('#focus', obj);
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    var date = new Date();
+//    console.log(date.getTime() , '-- getTime()');
+//    console.log(date.getMilliseconds(), '-- getMilliseconds()');
+//    console.log(date.getSeconds(), '-- getSeconds()');
+//    console.log(date.getMinutes(), '-- getMinute()');
+//    console.log(date.getHours(), '-- getHours()');
+//    console.log(date.getDay(), '-- getDay()');
+//    console.log(date.getDate(), '-- getDate()');
+//    console.log(date.getMonth(), '-- getMonth()');
+//    console.log(date.getFullYear(), '-- getFullYear()');
+//    console.log(date.setDate(1), '-- 每月第一天');
+//    console.log(new Date('2017', '9', 0), '-- 每月最后一天');
+</script>
+</body>
+</html>
+

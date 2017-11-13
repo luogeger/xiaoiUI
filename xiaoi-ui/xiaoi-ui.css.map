@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AACA,UAAU;AAsBV,QAAQ;AA0BR,QAAQ;AAkCR,QAAQ;AAGR,IAAI;ACtFJ,qBAAqB",
+"sources": ["variable.scss","buttons.scss"],
+"names": [],
+"file": "xiaoi-ui.css"
+}
